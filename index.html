@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Bookmarks</title>
+    <link rel = "icon" href = "images/bookmarkFavicon8.png" type = "image/x-icon">
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <main class="position-relative">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CCEEBC" fill-opacity="1" d="M0,224L34.3,208C68.6,192,137,160,206,160C274.3,160,343,192,411,208C480,224,549,224,617,208C685.7,192,754,160,823,165.3C891.4,171,960,213,1029,224C1097.1,235,1166,213,1234,218.7C1302.9,224,1371,256,1406,272L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path></svg>
+        
+        <div class="container py-5">
+            <h1 class="text-center fw-bold"><span>Bookmarker</span></h1>
+            <form class="form py-5">
+                <h2 class="text-center icon-green"><span><i class="fa-solid fa-bookmark"></i></span>&nbsp;Bookmark your favorite sites&nbsp;<span><i class="fa-solid fa-bookmark"></i></span></h2>
+                <div class="mt-5">
+                    <label for="siteName"><span class="icon-green"><i class="fa-solid fa-book-bookmark"></i></span>&nbsp;Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" id="siteName" class="form-control mt-2">
+                </div>
+                <div class="mt-4">
+                    <label for="siteUrl"><span class="icon-green"><i class="fa-solid fa-link"></i></span>&nbsp;Site URL</label>
+                    <input type="text" id="siteUrl" placeholder="Website URL" class="form-control mt-2">
+                </div>
+                
+                <div class="text-center pt-4">
+                    <button class="btn btn-success" onclick="addBookmark()"><i class="fa-solid fa-floppy-disk"></i>&nbsp;Save Bookmark</button>
+                </div>
+            </form>
+        </div>
+        <div class="custom-table container text-center">
+            <table class="table table-light table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="" id="dataBox"></tbody>
+            </table>
+        </div>
+    </main>
+    <!-- bootstrap js link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- js link -->
+    <script src="js/main.js"></script>
+</body>
+</html>

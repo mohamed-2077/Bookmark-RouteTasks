@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+svg{
+    position: fixed;
+    z-index: -1;
+}
+
+svg:hover{
+    background-color: green;
+}
+
+body{
+background-color: #FAF0D7;
+font-family: 'Itim', cursive;
+font-size: 20px;
+}
+
+h1{
+    color: #FAF0D7;
+    text-shadow: 2px 2px 4px #999;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+}
+
+input{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #C4D7B2;
+    box-shadow: 0 0 10px #C4D7B2;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #CCEEBC;
+    border-color: green;
+}
+
+thead{
+    background-color: #FAF0D7;
+}
+
+.icon-green i{
+    color: green;
+}
+
+form{
+    padding-bottom: 20px;
+    border-bottom-style: dashed;
+    border-color: green;
+}
