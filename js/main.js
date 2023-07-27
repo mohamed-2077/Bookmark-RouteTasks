@@ -14,17 +14,17 @@ function addBookmark(){
     }
     let urlPattern = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; //src: https://www.freecodecamp.org/news/check-if-a-javascript-string-is-a-url/
     if(bookmarkName.value===''){
-        alert('Enter the site name.');
+        Swal.fire('Enter the site name.');
     }else if(bookmarkUrl.value===''){
-        alert('Enter the site URL.');
+        Swal.fire('Enter the site URL.');
     }else if(!urlPattern.test(bookmarkUrl.value)){
-        alert("Enter a valid URL.\nA valid URL should start with 'http://' or 'https://'");
+        Swal.fire("Enter a valid URL.\nA valid URL should start with 'http://' or 'https://'");
     }else{
         var alreadyExists=allBookmarks.some(function(x){
             return x.name===bookmark.name;
         });
         if(alreadyExists){
-            alert("Bookmark already exists!");
+            Swal.fire("Bookmark already exists!");
         }else{
             allBookmarks.push(bookmark);
             localStorage.setItem('bookmark',JSON.stringify(allBookmarks))
